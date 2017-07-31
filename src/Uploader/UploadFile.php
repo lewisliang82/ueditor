@@ -3,7 +3,7 @@
 use App\Events\UEditorUploadStart;
 use App\Events\UEditorUploadSuccess;
 // use App\Models\UEditorMedia;
-use Ender\UEditor\Uploader\UploadUclod;
+use Lewisliang82\UEditor\Uploader\UploadUclod;
 use Lewisliang82\UEditor\Uploader\Upload;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 
@@ -99,7 +99,13 @@ class UploadFile  extends Upload{
 
             $this->fullName = "http://{$buket}.ufile.ucloud.com.cn/{$key}";
 
-            return $this->uploadUcloud($key, $this->file->getPathname());
+            $ret = $this->uploadUcloud($key, $this->file->getPathname());
+            if($ret){
+                $this->stateInfo = $this->stateMap[0];
+            }else{
+                $this->stateInfo = $this->getStateInfo("ERROR_UNKNOWN_MODE");
+            }
+            return $ret;
         }else{
             $this->stateInfo = $this->getStateInfo("ERROR_UNKNOWN_MODE");
             return false;

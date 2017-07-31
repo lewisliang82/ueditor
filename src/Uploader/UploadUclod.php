@@ -1,4 +1,4 @@
-<?php namespace Ender\UEditor\Uploader;
+<?php namespace Lewisliang82\UEditor\Uploader;
 
 use Lewisliang82\UEditor\Ucloud\proxy;
 
@@ -13,20 +13,6 @@ use Lewisliang82\UEditor\Ucloud\proxy;
  */
 trait UploadUclod
 {
-    /**
-     * 获取文件路径
-     * @return string
-     */
-    protected function getFilePath()
-    {
-        $fullName = $this->fullName;
-
-
-        $fullName = ltrim($fullName, '/');
-
-
-        return $fullName;
-    }
 
     public function uploadUcloud($key, $content)
     {

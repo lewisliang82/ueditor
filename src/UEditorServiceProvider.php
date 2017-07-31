@@ -28,11 +28,12 @@ class UEditorServiceProvider extends LaravelServiceProvider {
         //根据系统配置 取得 local
         $locale = config('app.locale');
         $ueditor_locale=config('ueditor.langMap.'.$locale);
-        $file = public_path()."/ueditor/lang/$ueditor_locale/$ueditor_locale.js";
+        //$file = public_path()."/ueditor/lang/$ueditor_locale/$ueditor_locale.js";
+        $file = "/ueditor/lang/$ueditor_locale/$ueditor_locale.js";
 
         if (!\File::exists($file)) {
             //Default is zh-cn
-            $file = public_path()."/ueditor/lang/zh-cn/zh-cn.js";
+            $file = "/ueditor/lang/zh-cn/zh-cn.js";
         }
         view()->share('ueditor_locale', $ueditor_locale);
         view()->share('ueditor_locale_file', $file);
