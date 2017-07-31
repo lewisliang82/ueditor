@@ -10,10 +10,7 @@
       "email": "lewisliang82@gmail.com"
     }
   ],
-  "require": {
-    "php": ">=5.4.0",
-    "laravel/framework": "5.4.*"
-  },
+  "require": {},
   "require-dev": {
   },
   "autoload": {
@@ -21,6 +18,5 @@
       "Lewisliang82\\UEditor\\": "src/"
     }
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  "minimum-stability": "stable"
 }
