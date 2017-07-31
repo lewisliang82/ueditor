@@ -1,0 +1,27 @@
+{
+  "name": "lewislinag82/ueditor",
+  "description": "A laravel package of ueditor,which is baidu's open source WYSIWYG editor",
+  "keywords": ["laravel","editor","ueditor","WYSIWYG"],
+  "homepage": "https://github.com/lewisliang82/ueditor.git",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "lewis",
+      "email": "lewisliang82@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/config": "~5.0",
+    "illuminate/support": "~5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lewisliang82\\UEditor\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
