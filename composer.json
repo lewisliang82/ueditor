@@ -12,7 +12,8 @@
   ],
   "require": {
     "php": ">=5.4.0",
-    "laravel/framework": "5.4.*"
+    "laravel/framework": "5.4.*",
+    "lewisliang82/cngroupupload": "dev-master"
   },
   "require-dev": {
   },
@@ -21,6 +22,6 @@
       "Lewisliang82\\UEditor\\": "src/"
     }
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "prefer-stable": true
 }
