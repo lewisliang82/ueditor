@@ -1,5 +1,5 @@
 {
-  "name": "lewislinag82/ueditor",
+  "name": "lewisliang82/ueditor",
   "description": "A laravel package of ueditor,which is baidu's open source WYSIWYG editor",
   "keywords": ["laravel","editor","ueditor","WYSIWYG"],
   "homepage": "https://github.com/lewisliang82/ueditor",
@@ -18,5 +18,5 @@
       "Lewisliang82\\UEditor\\": "src/"
     }
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "dev"
 }
