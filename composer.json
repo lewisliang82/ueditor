@@ -12,16 +12,15 @@
   ],
   "require": {
     "php": ">=5.4.0",
-    "illuminate/config": "~5.0",
-    "illuminate/support": "~5.0"
+    "laravel/framework": "5.4.*"
   },
   "require-dev": {
-    "phpunit/phpunit": "~4.0"
   },
   "autoload": {
     "psr-4": {
       "Lewisliang82\\UEditor\\": "src/"
     }
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
