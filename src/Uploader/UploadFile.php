@@ -95,9 +95,10 @@ class UploadFile  extends Upload{
             $md5_file = md5_file($this->file->getPathname());
             $image_name = "{$md5_file}.".$this->file->getClientOriginalExtension();
             $key = "upload/{$image_name}";
-            $buket = config('ueditor.core.uclod.buket');
+            $buket = config('ueditor.core.ucloud.buket');
+            $buketUrl = config('ueditor.core.ucloud.bucketUrl');
 
-            $this->fullName = "http://{$buket}.ufile.ucloud.com.cn/{$key}";
+            $this->fullName = "http://{$buket}{$buketUrl}/{$key}";
 
             $ret = $this->uploadUcloud($key, $this->file->getPathname());
             if($ret){

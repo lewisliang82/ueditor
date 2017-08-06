@@ -4,9 +4,7 @@
  * Your package routes would go here
  */
 
-$uploadRoutes=$routeName=config('ueditor.upload_routes_config_map');
-//$routeName=config('ueditor.upload_route');
-//$middleware=config('ueditor.core.route.middleware');
+$uploadRoutes = config('ueditor.upload_routes_config_map');
 foreach($uploadRoutes as $routeName=>$configName){
     // Route::any($routeName,['middleware'=> $middleware,'uses'=>'Ender\UEditor\UEditorController@server']);
     Route::any($routeName,['uses'=>'Lewisliang82\UEditor\UEditorController@server']);

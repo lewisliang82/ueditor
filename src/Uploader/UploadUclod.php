@@ -17,9 +17,8 @@ trait UploadUclod
     public function uploadUcloud($key, $content)
     {
         $proxy = new proxy();
-        $buket = config('ueditor.core.uclod.buket');
+        $buket = config('ueditor.core.ucloud.buket');
         $ret = $proxy->UCloud_PutFile($buket, $key, $content);
-
         if(null == $ret[1]){
             return true;
         }else{

@@ -21,6 +21,7 @@ class UEditor {
         $attr = self::makeConfig2String($config);
         echo "<script type='text/plain' {$attr}>{$content}</script>";
     }
+
     /**
      * 生成编辑器的参数
      * @param $config
